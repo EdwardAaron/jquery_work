@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ready()</title>
+    <script  src="../../../../jquery.js"></script>
+    <script src="promise().js"></script>
+    <style>
+        .square
+        {
+            position: relative;
+            width: 25px;
+            height: 25px;
+            background-color: #1E39BC;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>promise( [type ] [, target ] )<br/>
+            :返回一个promise，当elements上的所有动画完成时候，触发promise上的resolve方法(即通过done添加的方法)
+            :target:promise会绑定到target上
+            :type:队列名称，默认是fx
+        </p>
+    </div>
+        <div id="square1" class="square"></div>
+        <div id="square2" class="square"></div>
+</body>
+</html>

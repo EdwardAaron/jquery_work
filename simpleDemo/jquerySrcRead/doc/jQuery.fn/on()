@@ -1,0 +1,5 @@
+jQuery.fn.on(types, selector, data, fn, /*INTERNAL*/ one)
+    : types 事件的类型
+    : selector 选择器
+    : data 数据
+    : fn 处理函数

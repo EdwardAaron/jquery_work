@@ -1,0 +1,18 @@
+#pHello {
+    margin: 10px;
+    padding: 5px;
+    border: 2px solid #666;
+}
+div {
+    width: 60px;
+    padding: 10px;
+    height: 50px;
+    float: left;
+    margin: 5px;
+    background: red;
+    cursor: pointer;
+}
+.mod {
+    background: blue;
+    cursor: default;
+}

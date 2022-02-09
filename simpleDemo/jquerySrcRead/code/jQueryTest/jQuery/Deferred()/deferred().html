@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" href="deferred().css"/>
+</head>
+<body>
+<div>
+    <p><a href="https://api.jquery.com/category/deferred-object/">jQuery.deferred()参考资料</a></p>
+</div>
+<div>
+    <p>deferred.done( doneCallbacks [, doneCallbacks ] )<br/>
+        :添加functions，当deferred被解决时候触发
+    </p>
+    <p>deferred.fail( doneCallbacks [, doneCallbacks ] )<br/>
+        :添加functions，当deferred被拒绝时候触发
+    </p>
+    <p>deferred.then(resolvedCallback[, rejectedCallback [, progressCallback]])<br>
+        :resolvedCallback 当deferred被解决时候触发<br>
+        :rejectedCallback 当deferred被拒绝时候触发
+        :progressCallback 当deferred 在处理过程中候触发
+        :return :A Promise object
+    </p>
+    <p>deferred.always(callbacks[, callbacks, ..., callbacks])<br>
+        :无论 deferred是被解决或者拒绝，callbacks都会被执行
+    </p>
+    <p>deferred.state()<br>
+        :返回一个表示deferred对象的state
+    </p>
+</div>
+<div id="result">
+    <p>....</p>
+</div>
+<div>
+    <button id="doneFunction">doneFunction</button>
+    <button id="resolve">resolve</button>
+</div>
+<div>
+    <button id="failFunction">failFunction</button>
+    <button id="reject">reject</button>
+</div>
+<div>
+    <button id="thenFunction">thenFunction</button>
+    <button id="notify">notify</button>
+</div>
+<div>
+    <button id="promise">promise</button>
+</div>
+<div>
+    <h3>then(onFulfilled, onRejected, onProgress):on方法会被异步执行(setTimeout(...))</h3>
+    <button id="thenAddAll">使用then添加后续处理方法</button>
+    <button id="onFulfilled">onFulfilled</button>
+    <button id="onRejected">onRejected</button>
+    <button id="onProgress">onProgress</button>
+</div>
+<div>
+    <script src="../../../../jquery.js"></script>
+    <script src="deferred().js"></script>
+</div>
+</body>
+</html>

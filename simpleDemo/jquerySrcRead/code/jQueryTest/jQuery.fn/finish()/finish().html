@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>find</title>
+    <script src="../../../../jquery.js"></script>
+    <script src="finish().js"></script>
+</head>
+<body>
+<div>
+    <p>fn.finish([queueName])<br>
+        :终止当前对象在queue中的所有动画
+    </p>
+</div>
+<div id="example">
+    <input type="button" value="finish">
+    <p>
+        When .finish() is called on an element, the currently-running animation and all queued animations (if any) immediately stop and their CSS properties set to their target values. All queued animations are removed.
+        <br>
+        If the first argument is provided, only the animations in the queue represented by that string will be stopped.
+        <br>
+        The .finish() method is similar to .stop(true, true) in that it clears the queue and the current animation jumps to its end value. It differs, however, in that .finish() also causes the CSS property of all queued animations to jump to their end values, as well.
+        <br>
+    </p>
+</div>
+</body>
+</html>

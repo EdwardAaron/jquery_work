@@ -1,0 +1,2 @@
+jQuery.fn.toArray():
+    返回一个数组，里面包含jQuery对象所持有的元素

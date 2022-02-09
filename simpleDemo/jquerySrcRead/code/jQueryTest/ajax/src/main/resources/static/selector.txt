@@ -1,0 +1,4 @@
+<option value="">- choose a color -</option>
+<option value="1">red</option>
+<option value="1">white</option>
+<option value="1">black</option>

@@ -1,0 +1,5 @@
+jQuery.fn.toggleClass(className|function(),addOrRemove)
+    :切换类
+    :className 要切换的类
+    :function(i,className,addOrRemove)返回className
+    :addOrRemove:添加还是删除，可选项。如果没有使用，在根据元素是否有classNAME来切换

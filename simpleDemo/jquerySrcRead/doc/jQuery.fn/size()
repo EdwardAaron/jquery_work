@@ -1,0 +1,2 @@
+jQuery.fn.size()
+    :jQuery对象包含元素的个数

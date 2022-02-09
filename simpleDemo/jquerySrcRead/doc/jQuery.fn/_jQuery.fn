@@ -1,0 +1,2 @@
+jQuery.fn 为jQuery 函数的原型
+    jQuery.fn = jQuery.prototype = {...}

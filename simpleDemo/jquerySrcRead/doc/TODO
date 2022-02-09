@@ -1,0 +1,4 @@
+jQuery.fn.bind()
+
+
+jQuery.each(["toggle", "show", "hide"], function (i, name)

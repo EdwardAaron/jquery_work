@@ -1,0 +1,2 @@
+jQuery.fn.each(callback, args):
+    :调用 jQuery.each(this, callback, args)

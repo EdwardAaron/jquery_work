@@ -1,0 +1,2 @@
+$(document).ready(function(){});和 $(function(){}); 是等价的
+都表示当文档document就绪的时候执行function方法

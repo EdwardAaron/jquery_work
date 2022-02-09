@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ready()</title>
+    <script  src="../../../../jquery.js"></script>
+    <script src="queue().js"></script>
+</head>
+<body>
+    <div>
+        <p>queue([name])<br/>
+            :获取name对应queue，以[functions]的形式返回
+        </p>
+        <p>queue([name], function(next))<br/>
+            :在name指定的queue的末尾，添加function
+            :function:this为elem
+        </p>
+        <p>queue([name], newQueue)<br/>
+            :以newQueue替换name对应的queue
+        </p>
+    </div>
+</body>
+</html>

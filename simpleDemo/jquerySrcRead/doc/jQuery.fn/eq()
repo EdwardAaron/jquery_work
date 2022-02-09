@@ -1,0 +1,2 @@
+jQuery.fn.eq(index)
+    ;返回一个新的jQuery对象，该对象包含当前对象在index处的元素

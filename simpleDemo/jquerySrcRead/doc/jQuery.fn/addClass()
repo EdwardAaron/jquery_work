@@ -1,0 +1,4 @@
+jQuery.fn.addClass(value)
+    :为jQuery包含的对象添加 class,返回jQuery 对象
+    value:可以为一个包含一个或多个className的字符串
+          可以为function

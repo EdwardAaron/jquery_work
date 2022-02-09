@@ -1,0 +1,1 @@
+$(selector)的元素是固定的，这和document.getElementXXX是不一样的，后者是动态更新的

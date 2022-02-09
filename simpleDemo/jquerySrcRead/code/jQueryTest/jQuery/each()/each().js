@@ -1,0 +1,33 @@
+//在document加载文档加载完成后，触发事件，当然可以用jQuery 本身的机制来实现
+document.addEventListener("DOMContentLoaded", function () {
+
+    //jQuery的中的每个元素执行回调函数，注意回调函数不能返回false，否则后续元素不会执行回调函数
+    $objs = $(".jQuery_each");
+    twoArgs();
+    threeArgs();
+});
+
+/**
+ * $.each(obj,function(index,element))
+ */
+function twoArgs() {
+    jQuery.each($objs, function (index, element) {
+        console.log("this===element " + (this === element));
+        console.log("index " + index);
+        console.log("element.innerText " + element.innerText);
+    });
+    console.log("jQueryExtend Object");
+    $.each({name:"lucia",age:19},function (_,value) {
+        console.log(this);
+        console.log(`person ${_}, ${value}`);
+    })
+}
+/**
+ * $.each(obj,function(),args)
+ */
+function threeArgs() {
+    jQuery.each($objs, function () {
+        console.log(this);
+        console.log(arguments);
+    }, ["hello", "lucia"]);
+}
